@@ -17,6 +17,7 @@ h1, h2, h3, p {
    line-height: 1.5;
    letter-spacing: 0.02em;
    color:#434455;
+   margin-bottom: 8px;
    } 
 .logo {font-family: 'Raleway', sans-serif; font-weight: 700;
 font-size: 18px;
@@ -161,5 +162,9 @@ margin-right: 76px;}
                overflow: hidden;}
 .header-container {display: flex;
 justify-content: space-between;}
-   
+ .social-net {
+      display: flex;
+      align-items: center;
+      justify-content:space-evenly;
+   }
    
