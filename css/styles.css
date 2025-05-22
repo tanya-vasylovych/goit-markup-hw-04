@@ -198,11 +198,6 @@ margin-right: 76px;}
                overflow: hidden;}
 .header-container {display: flex;
 justify-content: space-between;}
-.social-net {
-      display: flex;
-      align-items: center;
-      justify-content:space-evenly;
-   }
 .scl-nt {
    display: flex;
    justify-content: center;
