@@ -35,7 +35,19 @@ margin-right: 76px;}
    line-height: 1.5;
    letter-spacing: 0.02em;
    color: #2e2f42;
-   padding: 24px 0} 
+   padding: 24px 0;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+.studio {transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.studio:hover::after {
+   display: block;
+   content: "";
+   border-radius: 2px;
+      width: 48px;
+      height: 4px;
+      background: #404BBF;
+      margin-top: 20px;
+}
 .nav-flex {padding: 24px 0;
    margin-right: auto;
    display: flex;
@@ -57,7 +69,8 @@ margin-right: 76px;}
        letter-spacing: 0.02em;}
 .address:hover {color:#404BBF;} 
 .address:focus {color:#404BBF;} 
-.address {line-height: 1.5;} 
+.address {line-height: 1.5;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2,1);} 
 .solutions {background-color:#2e2f42;
    width: 100%;
       height: 600px;}     
@@ -73,7 +86,8 @@ margin-right: 76px;}
         height: 56px;
         border: none;
         border-radius: 4px;
-       margin: 0 auto;}
+       margin: 0 auto;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .button:hover {background-color:#404BBF;}
 .button:focus {background-color:#404BBF;}
 .page-title {font-size: 56px;
@@ -104,7 +118,8 @@ margin-right: 76px;}
 .team-flex {display: flex;
       align-items: center;
       justify-content: center;
-      gap: 24px;}
+      gap: 24px;
+      }
 .prtfl-dscr {padding: 120px 0;}
 .card-title {font-size: 20px;
              font-weight: 500;
@@ -116,7 +131,9 @@ margin-right: 76px;}
             }
 .card-color {background-color:#FFFFFF;
    width: calc((100% - 72px) / 4);
-   border-radius: 0px 0px 4px 4px;}          
+   border-radius: 0px 0px 4px 4px;
+   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}          
 .team {background-color:#F4F4FD;padding: 120px 0;}  
 .card-name {padding: 32px 0;
             text-align: center;}  
@@ -124,7 +141,13 @@ margin-right: 76px;}
    flex-wrap: wrap;
    row-gap: 48px;
    column-gap: 24px;}
-.prtfl-card {width: calc((100% - 48px) / 3); }
+.prtfl-card {width: calc((100% - 48px) / 3); 
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2,1);
+  
+}
+.prtfl-card:hover {
+   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);     
+}
 .team-title {font-size: 36px;
    font-weight: 500;
    letter-spacing: 0.02em;
@@ -139,6 +162,8 @@ margin-right: 76px;}
 .footer {background-color:#2e2f42;padding: 100px 0;}
 .logo-footer {color:#f4f4fd;margin-bottom: 16px; display: inline-block;}
 .p-footer {color:#f4f4fd;
+   font-weight: 400;
+   font-size: 16px;
          letter-spacing: 0.02em;
          line-height: 1.5;
       max-width: 265px;}
@@ -162,9 +187,53 @@ margin-right: 76px;}
                overflow: hidden;}
 .header-container {display: flex;
 justify-content: space-between;}
- .social-net {
+.social-net {
       display: flex;
       align-items: center;
       justify-content:space-evenly;
    }
-   
+
+.icon {
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-start;
+         margin-bottom: 8px;
+         border: 1px solid #8e8f99;
+         border-radius: 4px;  
+      }
+.overlay {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: #4D5AE5;
+      
+               transform: translatey(100%);
+               transition: transform 250ms ease-in-out;
+
+               font-weight: 400;
+                  font-size: 16px;
+                  line-height: 1.5;
+                  letter-spacing: 0.02em;
+                  color: #f4f4fd;
+                  align-items: center;
+                  padding-top: 40px;
+                  padding-right: 32px; 
+                  padding-left: 32px;
+                  
+            }
+.vrl{position: relative;
+   overflow: hidden;}
+.vrl:hover .overlay {
+   transform: translatey(0);
+}
+.footer-net {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+}
+.media {width: 208px;
+       height: 80px;
+       margin-left: 120px;}
+.p-media {padding-bottom: 16px;}
