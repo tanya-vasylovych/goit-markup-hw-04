@@ -382,18 +382,4 @@ img {display: block;}
 
 
 
-.overlay {position: absolute;
-               top: 0;
-               left: 0;
-               width: 100%;
-               height: 100%;
-               background-color: #4D5AE5;
-      
-               transform: translatey(100%);
-               transition: transform 250ms ease-in-out;}
-
-
-
-
-
 
